@@ -5,17 +5,29 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden; 
+}
+
 body {
     background-color: #f2f2f2;
     color: #333;
 }
 
 header {
-    background-color: #007bff;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(45deg, rgba(32, 31, 37, 0.582) , rgba(103, 83, 168, 0.516));
 }
 
 h2 {
@@ -24,13 +36,30 @@ h2 {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     margin-top: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* :root {
+    --espaco-padrao: 20px;
+}
+
+#carousel-imagens {
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--espaco-padrao);
+} */
+
+/* #carousel-imagens img {
+    border-radius: 30px;
+} */
+
+
 
 .form-campo {
     margin-bottom: 20px;
@@ -49,16 +78,37 @@ h2 {
     border-radius: 5px;
 }
 
+.form-campo input:focus {
+   border-color:  #ffcb0f;
+   outline: none;
+   transition: all 0.5s ease;
+}
+
+
 .container button {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
     font-weight: bold;
     display: inline-block;
 }
 
 .error {
-    color: red
+    color: rgb(255, 82, 82);
+    font-family: 'Courier New', Courier, monospace;
 }
+
+input.error {
+    border: 2px solid red;
+    background-color: #ffffff;
+}
+
+input.valid {
+    /* border: 2px solid green; */
+    background-color: #ffffff;
+}
+
+

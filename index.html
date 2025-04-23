@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/form.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css"href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 <!--
 
@@ -35,7 +35,7 @@
         <form id="form">
             <div class="form-campo">
                 <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" placeholder="John Doe">
+                <input type="text" id="nome" name="nome" placeholder="Ex : João">
             </div>
             <div class="form-campo">
                 <label for="email">E-mail</label>
@@ -60,21 +60,13 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#carousel').slick({
-                autoplay: true,
-                arrows: false
-            })
-        })
-    </script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/messages_pt_BR.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
