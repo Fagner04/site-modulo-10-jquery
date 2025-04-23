@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-nav: #7f5f9f;
+    --preço-riscado:#a67575;
+}
+
+.container-flex {
+    display: flex;
+}
+
+html{
+   overflow-x: hidden;  /*esconder o conteúdo que excede a largura horizontal*/
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 16px ;
+    color: #fff;
+    backdrop-filter: blur(6px);
+    background: linear-gradient( 45deg, rgba(107, 50, 165, 0.643), rgba(141, 91, 191, 0.636));
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+
+/* .color-line {
+    background: linear-gradient(to right, #606160, #ff5f5f, #ff8d8d, #3a7c3a);
+    height: 3px;
+    width: 100%; 
+} */
+
+header  .container {
+    justify-content: space-between ;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #7f5f9f;
+    padding: 13px 0;
+    display: none;
+    margin-bottom: -13px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7f5f9f;
+}
+
+nav li a {
+    color: #dad5d5;
+    text-decoration: none;
+}
+
+.container li a:hover {
+    color: rgb(0, 255, 247);
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.lista-veiculos  li {
+    background-color: #ffffff;
+    padding: 4px 3px 40px 3px ;
+    border-radius: 10px;
+}
+  
+
+#sobre-a-loja img{
+    /* width: 300px;
+    height: 300px;
+    border-radius: 50%; */
+    max-width: 400px;
+    margin-right: 24px;
+    box-shadow: 10px 12px 0px rgba(144, 140, 140, 0.749);
+    transition: all 0.5s ease;
+}
+
+#sobre-a-loja img:hover {
+    box-shadow: 10px 12px 0px rgba(114, 114, 114, 0);
+    transition: all 0.9s ease;
+
+}
+
+section h2 {
+    margin: 10px 10px;
+    color:#796092
+}
+
+section p, strong {
+    margin: 0 18px;
+    color:#726e76
+}
+
+.lista-veiculos h3 {
+    margin: 10px 18px;
+}
+
+.lista-veiculos strong {
+    color: #4ed372;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+section {
+    padding:  20px 0;
+}
+
+section  button {
+    cursor: pointer;
+    padding: 8px ;
+    border-radius: 5px;
+    border: 0;
+    color: #ffffff;
+    font-size: large;
+    background-color: #796092;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin: 10px -5px -40px -1px;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin: 19px 10px;
+    transition: all 0.2s ease;
+}
+
+.lista-veiculos li:hover{
+    transform: scale(1.05);
+}
+
+.lista-veiculos img {
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+
+.item-central {
+    margin: 0 5%;
+}
+
+
+.ofertas strong {
+    color: #c54e36;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+del {
+    color: var(--preço-riscado);
+}
+
+footer .container {
+    justify-content: space-around;
+}
+footer {
+    background: rgb(151, 134, 195);
+}
+
+footer li {
+     list-style: none;
+     margin: 10px; 
+}
+
+footer img {
+    height: 35px;
+}
+
+footer p {
+    align-items: center;
+    display: flex;;
+}
+
+footer p a{
+    color: #fff;
+    margin: 0 10px;
+}
+
+footer p a:hover {
+    color: rgb(20, 235, 255);
+
+}
